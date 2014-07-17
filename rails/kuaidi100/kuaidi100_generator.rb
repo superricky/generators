@@ -18,7 +18,7 @@ class #{class_name}Controller < ApplicationController
      	req = Net::HTTP::Post.new(url.path)
 
     	req.set_form_data({
-						id: "c37076b4a12923d7",
+						id: "",
 			 			com: params[:com],
 			 			nu: params[:nu],
 			 			valicode:"",
