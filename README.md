@@ -1,9 +1,9 @@
 #快递100文档说明
 
 ----
-[1]:http://www.kuaidi100.com/openapi/api_post.shtml#d03 
+[1]:http://www.kuaidi100.com/openapi/api_post.shtml#d03
 
-**快递100的web API的文档在** 
+**快递100的web API的文档在**
 **[快递100API文档][1]**
 
 ----
@@ -36,12 +36,11 @@ xxxx@xxxx:~/newapp$ rails g kuaidi100 webHome
       create  app/views/web_home/index.html.haml
       create  app/views/web_home/show.html.haml
       create  app/helpers/web_home_helper.rb
-xxxx@xxxx:~/newapp$ 
 
 ```
 
 ##4.Tips
-> 修改接受信息方式在`controller.rb`中，添加物流公司在`helper.rb`中。
+
 
 > 下面是基本要配置的信息
 
@@ -57,3 +56,8 @@ muti:string       返回信息数量：1:返回多行完整的信息，0:只返�
 order:string       排序：desc：按时间由新到旧排列，asc：按时间由旧到新排列。
                               不填默认返回倒序（大小写不敏感）
 ```
+
+-----
+> 修改API基本信息方式在生成的`controller.rb`中，添加物流公司在生成的`helper.rb`中。
+> 下面是基本的信息
+
