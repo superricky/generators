@@ -42,3 +42,18 @@ xxxx@xxxx:~/newapp$
 
 ##4.Tips
 > 修改接受信息方式在`controller.rb`中，添加物流公司在`helper.rb`中。
+
+> 下面是基本要配置的信息
+
+```
+id:string         身份授权key
+com:string        快递公司代码
+nu:string         快递单号
+valicode:string   忽略字段
+show:string       返回类型: 0：返回json字符串，1：返回xml对象，2：返回html对象，
+                           3：返回text文本。如果不填，默认返回json字符串。
+muti:string       返回信息数量：1:返回多行完整的信息，0:只返回一行信息。
+                              不填默认返回多行。
+order:string       排序：desc：按时间由新到旧排列，asc：按时间由旧到新排列。
+                              不填默认返回倒序（大小写不敏感）
+```
