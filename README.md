@@ -41,4 +41,6 @@ xxxx@xxxx:~/newapp$
 ```
 
 ##4.Tips
-> 修改接受信息方式在`controller.rb`中，添加物流公司在`helper.rb`中。
+> 修改API基本信息方式在生成的`controller.rb`中，添加物流公司在生成的`helper.rb`中。
+> 下面是基本的信息
+
