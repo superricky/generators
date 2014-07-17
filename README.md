@@ -1,33 +1,40 @@
 #快递100文档说明
 
 ----
+
 [1]:http://www.kuaidi100.com/openapi/api_post.shtml#d03
 
 **快递100的web API的文档在**
 **[快递100API文档][1]**
 
 ----
+
 ##1.配置说明
 
 把`generators`文件夹放入`rails程序`的`lib文件夹`内，然后在`终端`进入rails程序`目录`
 
 ---
+
 ##2.使用说明
 
 在终端输入
 ```
 rails g kuaidi100 xxxx
 ```
+
 `xxxx`是想创建的controller的名称
 
 最后配置一下路径，默认添加的路径有两个
+
 ```
 get 'xxxx/index'
 post 'xxxx/show'
 ```
 
 ----
+
 ##3.示例
+
 ```
 xxxx@xxxx:~/newapp$ rails g kuaidi100 webHome
        route  post 'web_home/show'
@@ -57,7 +64,6 @@ order:string       排序：desc：按时间由新到旧排列，asc：按时间
                               不填默认返回倒序（大小写不敏感）
 ```
 
------
 > 修改API基本信息方式在生成的`controller.rb`中，添加物流公司在生成的`helper.rb`中。
 > 下面是基本的信息
 
